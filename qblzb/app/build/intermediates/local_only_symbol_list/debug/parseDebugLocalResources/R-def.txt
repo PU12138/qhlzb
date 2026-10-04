@@ -1,0 +1,28 @@
+R_DEF: Internal format may change without notice
+local
+color accent_97
+color accent_98
+color bg_card
+color bg_dark
+color gold
+color hidden_badge
+color text_primary
+color text_secondary
+drawable avatar_bg
+drawable combo_item_bg
+drawable ic_launcher
+id avatarBox
+id btn97
+id btn98
+id combosContainer
+id recyclerView
+id tvAvatarText
+id tvHidden
+id tvName
+id tvNameEn
+id tvStory
+layout activity_character_detail
+layout activity_main
+layout item_character
+string app_name
+style Theme.KOFCombo

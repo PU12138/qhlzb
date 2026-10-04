@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.qblzb.kof.app-debug-32:/layout_activity_character_detail.xml.flat",
+        "source": "com.qblzb.kof.app-main-34:/layout/activity_character_detail.xml"
+    },
+    {
+        "merged": "com.qblzb.kof.app-debug-32:/drawable_combo_item_bg.xml.flat",
+        "source": "com.qblzb.kof.app-main-34:/drawable/combo_item_bg.xml"
+    },
+    {
+        "merged": "com.qblzb.kof.app-debug-32:/drawable_ic_launcher.xml.flat",
+        "source": "com.qblzb.kof.app-main-34:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.qblzb.kof.app-debug-32:/layout_activity_main.xml.flat",
+        "source": "com.qblzb.kof.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.qblzb.kof.app-debug-32:/layout_item_character.xml.flat",
+        "source": "com.qblzb.kof.app-main-34:/layout/item_character.xml"
+    },
+    {
+        "merged": "com.qblzb.kof.app-debug-32:/drawable_avatar_bg.xml.flat",
+        "source": "com.qblzb.kof.app-main-34:/drawable/avatar_bg.xml"
+    }
+]
