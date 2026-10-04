@@ -57,10 +57,45 @@ public class CharacterDetailActivity extends AppCompatActivity {
             tvAvatarText.setTextColor(Color.parseColor("#ff6b6b"));
         }
 
+        // 隐藏人物显示解锁方法
+        if (ch.hidden && ch.unlock != null && !ch.unlock.isEmpty()) {
+            addUnlockInfo(ch.unlock);
+        }
+
         // 渲染连招列表
         for (String combo : ch.combos) {
             addComboItem(combo);
         }
+    }
+
+    private void addUnlockInfo(String text) {
+        // 标题
+        TextView title = new TextView(this);
+        title.setText("★ 解锁方法");
+        title.setTextSize(15);
+        title.setTextColor(Color.parseColor("#ff6b6b"));
+        title.setTypeface(null, android.graphics.Typeface.BOLD);
+        LinearLayout.LayoutParams lp1 = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+        lp1.setMargins(0, 12, 0, 4);
+        title.setLayoutParams(lp1);
+        combosContainer.addView(title);
+
+        // 解锁内容
+        TextView tv = new TextView(this);
+        tv.setText(text);
+        tv.setTextSize(13);
+        tv.setTextColor(Color.parseColor("#f5f5f5"));
+        tv.setPadding(16, 8, 12, 8);
+        tv.setBackgroundColor(Color.parseColor("#2d1b3d"));
+        tv.setLineSpacing(3, 1);
+        LinearLayout.LayoutParams lp2 = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+        lp2.setMargins(0, 0, 0, 10);
+        tv.setLayoutParams(lp2);
+        combosContainer.addView(tv);
     }
 
     private void addComboItem(String text) {
